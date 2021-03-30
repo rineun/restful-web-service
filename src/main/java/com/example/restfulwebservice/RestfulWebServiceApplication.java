@@ -10,5 +10,4 @@ public class RestfulWebServiceApplication {
         SpringApplication.run(RestfulWebServiceApplication.class, args);
     }
 
-
 }
