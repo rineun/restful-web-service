@@ -3,7 +3,7 @@ spring boot
 restAPI 
 
 
-*user 추
+*user 추가
 POST http://localhost:8088/users
 {
 "name": "New USer",
