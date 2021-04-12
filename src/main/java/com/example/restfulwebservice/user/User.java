@@ -45,5 +45,15 @@ public class User {
     @ApiModelProperty(notes = "사용자의 주민번호 입력해 주세요")
     private String ssn;
 
+    @OneToMany(mappedBy = "user")
+    private List<Post> post;
 
+
+    public User(int i, String name, Date joinDate, String password, String ssn) {
+        this.id = id;
+        this.name = name;
+        this.joinDate = joinDate;
+        this.password = password;
+        this.ssn =  ssn;
+    }
 }
