@@ -4,6 +4,20 @@ server:
 logging:
   level:
     org.springframework: DEBUG
+
 spring:
+  jpa:
+    show-sql: true
   messages:
     basename: messages
+  security:
+    user:
+      name: user
+      password: password
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
